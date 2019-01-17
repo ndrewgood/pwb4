@@ -627,9 +627,21 @@ user-select: none;
 }
 
 .footerText {
-padding-top: 5vw;
-margin: auto;
-align-self: center;
-padding-bottom: 2vw;
-color: rgb(92, 92, 92); 
+    display: inherit;
+    padding-top: 5vw;
+    margin: auto;
+    align-self: center;
+    padding-bottom: 2vw;
+    color: rgb(92, 92, 92); 
+}
+
+.footerBelow {
+    padding-top: 0vw;
+    padding-bottom: 5vw;
+    text-decoration: none;
+}
+
+.footerBelow:hover {
+    text-decoration: line-through;
+    font-style: italic;
 }
