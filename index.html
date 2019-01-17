@@ -1,14 +1,147 @@
 <!DOCTYPE html>
-<html>
+
+<!-- Hello! if you want to read the source files, check out the github repo: https://github.com/andrewg8/pwb4 
+            love u lots :)
+            ,andrew
+-->
+
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>test</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.css" />
+
+    <title>Andrew Goodridge</title>
 </head>
 <body>
-    <p>test</p>
+    <div class="container">
+        <div class="nav"
+        data-aos="fade-down"
+        data-aos-duration="400"
+        data-aos-easing="ease-out-quart"
+        >
+            <div class="navL">
+                <a href="index.html">Andrew Goodridge</a>
+            </div>
+            <div class="navR">
+                <ul>
+                    <li><a href="about.html">about</a></li>
+                    <li><a target="_blank" href="Resume.pdf">resume</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="hero"     
+        data-aos="fade-in"
+        data-aos-delay="300"
+        data-aos-duration="300"
+        data-aos-easing="ease-out-quart"
+        >
+
+           <a href="leftpiccenter.png" 
+           data-fancybox 
+           data-width="600" data-height="600"
+           data-small-btn="true">
+                <div class="pic pic1"></div>
+           </a>
+            <a href="rightpiccenter.png" 
+            data-fancybox 
+            data-width="600" data-height="600"
+            data-small-btn="true">
+                <div class="pic pic2"></div>
+            </a>
+        </div>
+        <div class="projects">
+            <p class="projectsTitle noselect"
+            data-aos="fade-in"
+            data-aos-delay="300"
+            data-aos-duration="300"
+            data-aos-easing="ease-out-quart"
+            data-aos-once="true">― Projects ―</p>     
+            <ul
+            data-aos="fade-up"
+            data-aos-duration="400"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="400"
+            data-aos-once="true">
+                <li class="p">
+                    <div class="pthumb p1">
+                        <img src="livewhale.svg" alt="livewhale">
+                    </div>
+                    <div class="pInfoCont">
+                        <div class="pTopCont">
+                            <h1 class="ptitle">LiveWhale</h1>
+                            <h3 class="pdate">October 2018</h3>
+                        </div>
+                        <h3 class="ptype">Competition Entry</h3>
+                        <div class="pBottomCont">
+                            <p class="pdesc">
+                                Prototype for an app aimed at de-stigmatizing mental health resources for students.
+                            </p>
+                            <a target="_blank" href="https://medium.com/@ndrewgood/livewhale-de-stigmatizing-mental-health-resources-for-students-24bf87726653">
+                            <button class="pbutton noselect">Read more</button>
+                        </a>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="p">
+                    <div class="pthumb p2">
+                        <img src="code.svg" alt="personal websites">
+                    </div>
+                        <div class="pInfoCont">
+                            <div class="pTopCont">
+                                <h1 class="ptitle">Personal Websites</h1>
+                                <h3 class="pdate">2018-2019</h3>
+                            </div>
+                            <h3 class="ptype">Coding</h3>
+                            <div class="pBottomCont">
+                                <p class="pdesc">
+                                   A documentation of past and previous personal websites that I made.
+                                </p>
+                                
+                                <a target="_blank" href="https://gist.github.com/andrewg8/b72b7e973bc29cead31c22360c5c10b6">
+                                <button class="pbutton noselect">Read more</button>
+                            </a>
+                            </div>
+    
+                        </div>
+                </li>
+                <li class="p">
+                        <div class="pthumb"></div>
+                        <div class="pInfoCont">
+                            <div class="pTopCont">
+                                <h1 class="ptitle">Visual Art/Design</h1>
+                                <h3 class="pdate">Ongoing</h3>
+                            </div>
+                            <h3 class="ptype">Misc.</h3>
+                            <div class="pBottomCont">
+                                <p class="pdesc">
+                                    A selection of the visual art and design I have made recently
+                                </p>
+                                <button class="pbutton noselect">Read more</button>
+                            </div>
+    
+                        </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p class="footerText noselect">Andrew Goodridge 2019</p>
+            <a class="footerText">about the site</a>    
+        </div>
+    </div>
 </body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </html>

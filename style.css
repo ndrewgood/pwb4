@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:500,500i,700');
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
+
+img {
+    user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+
+.container {
+    /* background: rgb(184, 147, 147); */
+    font-family: 'Raleway', sans-serif;
+}
+
+/*
+
+        NAV
+
+*/
+
+.nav {
+    /* background: rgb(74, 58, 212); */
+    height: 50px;
+    margin:0 auto;
+    display: flex;
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.navL {
+    /* background: rgb(212, 26, 88); */
+    float: left;
+    /* overflow: auto; */
+    display: flex;
+
+}
+
+.navL a {
+    padding-left: 10px;
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.navR {
+    /* background: rgb(22, 216, 135); */
+    display: flex;
+    margin-left: auto;
+    /* overflow: auto; */
+}
+
+.navR ul {
+    display: flex;
+    margin: auto;
+}
+
+.navR li {
+    list-style-type: none;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.navR a:hover {
+    text-decoration: line-through;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 500px) {
+    .nav {
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .navL a {
+        align-self: baseline;
+        margin-top: 5px;
+    }
+
+    .navR {
+        /* background: #000; */
+        width: 150px;
+        height: auto;
+    }
+    .navR ul {
+        display: block;
+        text-align: end;
+        /* background: rgb(42, 206, 42); */
+        margin-right: 0px;
+    }
+    .navR li {
+        padding-bottom: 8px;
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navR {
+        width: auto;
+        height: auto;
+    }
+
+    .navR ul {
+        padding-inline-start: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 750px) {
+    .nav {
+    width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .nav {
+        width: 60vw;
+    }
+    .navR li {
+        padding-bottom: 6px;
+        margin-right: 20px;
+    }
+}
+
+
+/* 
+
+        HERO
+
+*/
+
+.hero {
+    /* background: rgb(221, 27, 27); */
+    width: 75vw;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic {
+    height: 40vw;
+    width: 40vw;
+    background: white;
+    background-position: center; /* Center the image */
+    background-size: 100%;
+    -webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
+}
+
+.pic1 {
+    background-image: url("leftpic.png");
+    margin-right: 20px;
+}
+
+.pic2 {
+    background-image: url("rightpic.png");
+}
+
+@media only screen and (min-width: 1000px){
+    .hero {
+        height: 400px;
+    }
+
+    .pic {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1340px){
+    .hero {
+        height: 500px;
+    }
+
+    .pic {
+        height: 500px;
+        width: 500px;
+    }
+
+    .pic1{
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero {
+    width: 80vw;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .hero {
+    width: 90vw;
+    border-radius: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .hero{
+    display: grid;
+    height: auto;
+    }
+
+    .pic {
+        width: 60vw;
+        height: 60vw;    
+    }
+
+    .pic1 {
+        margin-bottom: 5vw;
+        background-image: url("leftpiccenter.png");
+    }
+
+    .pic2 {
+        background-image: url("rightpiccenter.png");
+    }
+
+    .pic {
+        width: 70vw;
+        height: 70vw;    
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .hero {
+    border-radius: 15px;
+    padding-left: 10px;
+    }
+}
+
+/*
+
+        PROJECTS
+
+*/
+
+.projects {
+    /* background: rgb(151, 223, 223); */
+    margin: auto;
+    width: 60vw;
+    margin-top: 30px;
+    display: grid !important;
+}
+
+.projectsTitle {
+    margin: auto;
+    margin-top: 4vw;
+    color: rgb(92, 92, 92); 
+}
+
+.p {
+    /* background: rgb(36, 155, 52); */
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.pTopCont {
+    /* background: rgb(233, 88, 88); */
+}
+
+.pBottomCont {
+    /* background: rgb(115, 78, 185); */
+    color: rgb(92, 92, 92);
+}
+
+.pthumb {
+    background: rgb(129, 33, 33);
+    border-radius: 5vw;
+    -webkit-box-shadow: 6px 9px 31px -10px rgba(0,0,0,0.46);
+    -moz-box-shadow: 6px 9px 31px -10px rgba(0,0,0,0.46);
+    box-shadow: 6px 9px 31px -10px rgba(0,0,0,0.46);
+    -webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s; 
+}
+
+.pthumb:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.p1 {
+     background: #2B364F;
+}
+
+.p2 {
+    background: rgb(37, 80, 50);
+
+}
+
+.p2 img {
+    margin-top: 31% !important;
+    margin-left: 31.5% !important;
+}
+
+.pthumb img {
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 27%;
+}
+
+.pdate {
+    font-weight: normal;
+}
+
+.ptype {
+    font-weight: normal;
+    color:rgb(92, 92, 92);
+}
+
+.pbutton {
+    border: none;
+    background: rgb(31, 117, 230);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 9px 31px -10px rgba(0,0,0,0.46);
+    -moz-box-shadow: 6px 9px 31px -10px rgba(0,0,0,0.46);
+    box-shadow: 6px 9px 31px -10px rgba(0,0,0,0.46);
+    border: 2px solid rgb(31, 117, 230);
+    -webkit-transition: 0.2s; /* Safari */
+    transition: 0.2s;
+}
+
+.pbutton:hover {
+    cursor: pointer;
+    background: white;
+    color: rgb(31,117,230);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+}
+
+.pdesc {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+@media only screen and (min-width: 750px){
+    .projects {
+        display: flex;
+        margin: auto;
+        width: 65vw;
+        margin-top: 20px;
+    }
+
+    .projects ul {
+        width: 60vw;
+        padding: 0;
+        margin: auto;
+    }
+
+    .p {
+        display: flex;
+    }
+
+
+    .pthumb {
+        height: 20vw;
+        width: 20vw;
+        min-width: 20vw;
+        border-radius: 3vw;
+        margin: 20px;
+    }
+
+    .pInfoCont {
+        margin-top: 15px;
+        margin-left: 15px;
+        width: 100%;
+    }
+
+    .pBottomCont {
+        display: block;
+        width: 30vw;
+        margin-top:0px;
+    }
+
+    .pTopCont {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .ptitle {
+        width: 20vw;
+        font-size: 1.7em;
+        margin-right: 3vw;
+        margin-bottom: 0px;
+    }
+
+    .pdate {
+        font-size: 1.2em;
+        float: right;
+    }
+
+    .ptype {
+        margin-top:0px;
+        margin-bottom: 10px;
+    }
+
+    .pdesc {
+        margin-top:0px;
+    }
+
+    .pbutton {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+
+    .pthumb { 
+        height: 15vw;
+        width: 15vw;
+        min-width: 15vw;
+        border-radius: 3vw;
+        margin: 40px;
+    }
+
+    .pTopCont {
+        margin-top: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 1300px){
+
+    .pthumb {
+        height: 12vw;
+        width: 12vw;
+        min-width: 12vw;
+        border-radius: 2vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 750px) {
+    .projects {
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+        width: 75vw;
+    }
+
+    .projects ul {
+        width: 60vw;
+        padding: 0;
+        margin: auto;
+    }
+
+    .projectsTitle {
+        margin-bottom: 5vw;
+    }
+
+    .p {
+        align-self: center;
+        display: block;
+        text-align: center;
+        margin-bottom: 10vw;
+    }
+
+
+    .pthumb {
+        margin-left: auto;
+        margin-right: auto;
+        height:40vw;
+        width:40vw;
+    }
+
+    .pthumb img {
+        display: inline;
+    }
+
+    .p2 img {
+        margin-top: 30% !important;
+        margin-left: 2% !important;
+    }
+
+    .p h1 {
+        font-size: 1.8em;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .pdate {
+        margin-top: 0px;
+        margin-bottom: 5px;
+
+    }
+
+    .ptype {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    .pBottomCont {
+        width: 60vw;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .pdesc {
+        margin-top: 15px;
+        font-size: 1em;
+        width: 60vw;
+        margin: auto;
+    }
+
+    .pbutton {
+        margin-top: 5px;
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .pInfoCont {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .projectsTitle {
+        margin-top: 6vw;
+        margin-bottom: 3vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .projects {
+        margin-top: 20px;
+        width: 75vw;
+    }
+
+    .projects ul {
+        width: 65vw;
+        padding: 0;
+        margin: auto;
+    }
+
+    .p {
+        margin-top: 30px;
+        margin-bottom: 15vw;
+    }
+
+
+    .pthumb {
+        height:50vw;
+        width:50vw;
+
+    }
+
+    .p h1 {
+        font-size: 1.8em;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .pdate {
+        margin-top: 0px;
+        margin-bottom: 5px;
+
+    }
+
+    .ptype {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .pBottomCont {
+        width: 60vw;
+        margin: auto;
+    }
+
+    .pdesc {
+        margin-top: 10px;
+        font-size: 1em;
+        margin-bottom: 6px;
+    }
+
+    .pbutton {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+
+}
+
+
+/* 
+
+
+        FOOTER 
+
+
+*/
+
+.footer {
+    width: 100%;
+    /* background: rgb(212, 44, 44); */
+    display: table;
+}
+
+.footerText {
+padding-top: 5vw;
+margin: auto;
+align-self: center;
+padding-bottom: 2vw;
+color: rgb(92, 92, 92); 
+}
