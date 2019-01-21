@@ -317,6 +317,11 @@ user-select: none;
     margin-left: 31.5% !important;
 }
 
+.p3 img {
+    margin-top: 31% !important;
+    margin-left: 31.5% !important;
+}
+
 .pthumb img {
     width: 40%;
     height: 40%;
@@ -503,6 +508,11 @@ user-select: none;
         margin-left: 2% !important;
     }
 
+    .p3 img {
+        margin-top: 30% !important;
+        margin-left: 2% !important;
+    }
+
     .p h1 {
         font-size: 1.8em;
         margin-top: 5px;
@@ -624,6 +634,7 @@ user-select: none;
     width: 100%;
     /* background: rgb(212, 44, 44); */
     display: table;
+    background-color: rgb(241, 242, 247);
 }
 
 .footerText {
@@ -645,3 +656,141 @@ user-select: none;
     text-decoration: line-through;
     font-style: italic;
 }
+
+/* 
+
+    ABOUT ME
+
+*/
+
+.aboutPic {
+    background-image: url("aboutmepic.png");
+    margin-right: 20px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.aboutDesc {
+    /* background: rgb(206, 206, 206); */
+    display: flex;
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    text-indent: 20px;
+    color: rgb(92, 92, 92); 
+}
+
+.aboutDesc a {
+    text-decoration: none;
+    color:black;
+    /* font-weight: 700; */
+}
+
+.aboutDesc a:hover {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.aboutContainer {
+    /* background: rgb(155, 173, 214); */
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .aboutDesc {
+        height: auto;
+        width: 50vw;
+    }
+
+    .aboutPic{
+        margin: auto;
+    }
+
+    .aboutHero {
+        display: grid;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .aboutDesc {
+        height: auto;
+        margin: auto;
+        width: 80vw;
+    }
+
+}
+
+
+/* 
+
+
+        CONTACT
+
+
+*/
+
+.smList li {
+    margin-bottom: 10px;
+    color: rgb(94, 72, 107); 
+}
+
+
+
+/* 
+
+
+            PROJECT PAGE
+
+
+*/
+
+.projectHero {
+    display: grid;
+    margin-top: 5vw;
+    height: auto;
+}
+
+.projectHero h1 {
+    margin: auto;
+}
+
+.projectPic {
+    height: 40vw;
+    width: 40vw;
+    margin: auto;
+}
+
+/* 
+
+
+            ART PAGE PICS
+
+
+*/
+
+.artPic1 {
+    background-image: url("media/colorTheoryFinalArt.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.artPic2 {
+    background-image: url("media/draperyArt.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.artPic3 {
+    background-image: url("media/DrawFinalArt.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.artPic4 {
+    background-image: url("media/blocksCharcoalArt.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
