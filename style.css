@@ -657,6 +657,26 @@ user-select: none;
     font-style: italic;
 }
 
+@media only screen and (max-width: 750px) {
+    .footerText {
+        padding-bottom: 6vw;
+    }
+
+    .footer {
+        padding-top: 3vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .footerText {
+        padding-bottom: 7vw;
+    }
+
+    .footerBelow {
+        padding-bottom: 8vw;
+    }
+}
+
 /* 
 
     ABOUT ME
@@ -760,6 +780,20 @@ user-select: none;
     height: 40vw;
     width: 40vw;
     margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .projectPic {
+        height: 60vw;
+        width: 60vw;
+    }    
+}
+
+@media only screen and (max-width: 1000px) {
+    .projectPic {
+        height: 60vw;
+        width: 60vw;
+    }    
 }
 
 /* 
