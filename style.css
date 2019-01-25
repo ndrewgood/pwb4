@@ -805,26 +805,26 @@ user-select: none;
 
 */
 
-.artPic1 {
-    background-image: url("media/colorTheoryFinalArt.png");
+.art {
+    background-image: url("colorTheoryFinalArt.png");
     background-size: 80%;
     background-repeat: no-repeat;
 }
 
 .artPic2 {
-    background-image: url("media/draperyArt.png");
+    background-image: url("draperyArt.png");
     background-size: 80%;
     background-repeat: no-repeat;
 }
 
 .artPic3 {
-    background-image: url("media/DrawFinalArt.png");
+    background-image: url("DrawFinalArt.png");
     background-size: 80%;
     background-repeat: no-repeat;
 }
 
 .artPic4 {
-    background-image: url("media/blocksCharcoalArt.png");
+    background-image: url("blocksCharcoalArt.png");
     background-size: 80%;
     background-repeat: no-repeat;
 }
