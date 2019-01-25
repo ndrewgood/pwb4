@@ -475,7 +475,7 @@ user-select: none;
     }
 
     .projects ul {
-        width: 60vw;
+        width: 70vw;
         padding: 0;
         margin: auto;
     }
@@ -541,6 +541,7 @@ user-select: none;
         font-size: 1em;
         width: 60vw;
         margin: auto;
+        margin-bottom: 10px;
     }
 
     .pbutton {
@@ -568,7 +569,7 @@ user-select: none;
     }
 
     .projects ul {
-        width: 65vw;
+        width: 70vw;
         padding: 0;
         margin: auto;
     }
